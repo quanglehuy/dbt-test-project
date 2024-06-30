@@ -4,7 +4,7 @@ WITH stg_customers AS (
         CONCAT(first_name,' ', last_name) AS customer_name,
         email AS email_address,
         address AS billing_address
-    FROM raw.customer
+    FROM dbt_hle_testproject.customer
 
 )
 SELECT * FROM stg_customers
